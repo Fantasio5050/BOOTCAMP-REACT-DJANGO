@@ -1,11 +1,11 @@
 from django.urls import path
-from ninja import NinjaAPI, ModelSchema, Schema
+from ninja import Router, ModelSchema, Schema
 from polls.models import Question, Choice
 from django.utils import timezone
 from pydantic import BaseModel
 from . import views
 
-api = NinjaAPI()
+router = Router()
 
 urlpatterns = [
     path("", views.index, name="index"),
@@ -35,7 +35,7 @@ class AddQuestionSchema(Schema):
     choices : list[str]
 
 
-@api.post('/create_question', response=QuestionSchema)
+@router.post('/create_question', response=QuestionSchema)
 def add(request, add_question: AddQuestionSchema):
     question = Question.objects.create(
         question_text = add_question.question_text, pub_date = timezone.now()
@@ -48,6 +48,6 @@ def add(request, add_question: AddQuestionSchema):
         )
     return question
 
-@api.get("/question/{question_id}", response=QuestionSchema)
+@router.get("/question/{question_id}", response=QuestionSchema)
 def get(request, question_id: int):
     return Question.objects.get(pk=question_id)
