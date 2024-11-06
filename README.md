@@ -19,23 +19,10 @@
   </p>
 </div>
 
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
-
 ### Built With
 
 * [![React][React.js]][React-url]
 * [![Django][Django.js]][Django-url]
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
-
-
-<!-- USAGE EXAMPLES -->
-## Usage
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
-
-<p align="right">(<a href="#readme-top">Retour au début</a>)</p>
-
 
 
 <!-- MARKDOWN LINKS & IMAGES -->
