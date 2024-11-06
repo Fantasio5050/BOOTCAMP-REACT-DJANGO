@@ -13,10 +13,10 @@
 <br />
 <div align="center">
     <img src="Front-End\public\vite.svg" alt="Logo" width="80" height="80">
-    <a href=[React-url]>
+    <a href="https://reactjs.org/" target="_blank">
         <img src="Front-End\src\assets\react.svg" alt="Logo" width="80" height="80">
     </a>
-    <a href=[Django-url]>
+    <a href="https://www.djangoproject.com/" target="_blank"">
         <img src="Back-End\assets\django-logo.png" alt="Logo" width="160" height="80">
     </a>
 
