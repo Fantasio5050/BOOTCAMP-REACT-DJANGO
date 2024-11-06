@@ -12,10 +12,13 @@
 <!-- PROJECT LOGO -->
 <br />
 <div align="center">
-  <a href="https://github.com/Fantasio5050/BOOTCAMP-REACT-DJANGO">
     <img src="Front-End\public\vite.svg" alt="Logo" width="80" height="80">
-    <img src="Front-End\src\assets\react.svg" alt="Logo" width="80" height="80">
-  </a>
+    <a href="[React-url]">
+        <img src="Front-End\src\assets\react.svg" alt="Logo" width="80" height="80">
+    </a>
+    <a href="[Django-url]">
+        <img src="Back-End\assets\django-logo.png" alt="Logo" width="160" height="80">
+    </a>
 
 <h3 align="center">Bootcamp DJANGO / REACT</h3>
 
