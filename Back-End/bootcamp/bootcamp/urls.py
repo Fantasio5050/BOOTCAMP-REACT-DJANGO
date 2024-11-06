@@ -17,17 +17,17 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import include, path
 from ninja import NinjaAPI
-from blackjack.urls import router as blackjack_router
-from polls.urls import router as polls_router
+from blackjack.api import router as blackjack_router
+from polls.api import router as polls_router
 
 api = NinjaAPI()
 
+api.add_router("/polls", polls_router)
+api.add_router("/blackjack", blackjack_router)
+
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path("polls/", include("polls.urls")),
-    path("blackjack/", include("blackjack.urls")),
     path("api/", api.urls),
 ]
 
-api.add_router("/polls", polls_router)
-api.add_router("/blackjack", blackjack_router)
+
